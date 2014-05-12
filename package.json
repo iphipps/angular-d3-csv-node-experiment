@@ -1,0 +1,34 @@
+{
+  "name": "node-angular-d3-csv",
+  "version": "0.0.1-pre",
+  "description": "...",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "node ./node_modules/.bin/grunt build",
+    "start": "./node_modules/.bin/nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iphipps/node-angular-d3-csv.git"
+  },
+  "keywords": [
+    "csv"
+  ],
+  "author": "Ian Phipps <phippsian@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iphipps/node-angular-d3-csv/issues"
+  },
+  "homepage": "https://github.com/iphipps/node-angular-d3-csv",
+  "dependencies": {
+    "express": "~4.1.1",
+    "express-partials": "~0.2.0",
+    "ejs": "~1.0.0",
+    "nodemon": "~1.0.17",
+    "grunt": "~0.4.4",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-less": "~0.11.0"
+  }
+}

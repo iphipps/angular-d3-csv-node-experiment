@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div ng-controller="Ctrl2">
+        <input ng-model="searchText">
+        <hr/>
+        [ <a href="" ng-click="predicate=''">unsorted</a> ]
+        <table class="table table-striped">
+        <tr>
+
+          (<a href="" ng-click="predicate = '-name'; reverse=false">^</a>)</th>
+          <th><a href="" ng-click="predicate = 'Athlete '; reverse=!reverse">Athlete</a></th>
+          <th><a href="" ng-click="predicate = 'Age'; reverse=!reverse">Age</a></th>
+            <th><a href="" ng-click="predicate = 'Country'; reverse=!reverse">Country</a></th>
+          <th><a href="" ng-click="predicate = 'Year'; reverse=!reverse">Year</a></th>
+          <th><a href="" ng-click="predicate = 'ClosingCeremonyDate '; reverse=!reverse">Closing Ceremony Date</a></th>
+          <th><a href="" ng-click="predicate = 'Sport '; reverse=!reverse">Sport</a></th>
+          <th><a href="" ng-click="predicate = 'GoldMedals '; reverse=!reverse">Gold Medals</a></th>
+
+          <th><a href="" ng-click="predicate = 'SilverMedals'; reverse=!reverse">Silver Medals</a></th>
+          <th><a href="" ng-click="predicate = 'BronzeMedals'; reverse=!reverse">Bronze Medals</a></th>
+          <th><a href="" ng-click="predicate = 'TotalMedals'; reverse=!reverse">Total Medals</a></th>
+
+        </tr>
+        <tr ng-repeat="Olympian in Olympians | orderBy:predicate:reverse | filter:searchText">
+          <td>{{Olympian.Athlete}}</td>
+          <td>{{Olympian.Age}}</td>
+          <td>{{Olympian.Country}}</td>
+          <td>{{Olympian.Year}}</td>
+          <td>{{Olympian.ClosingCeremonyDate}}</td>
+          <td>{{Olympian.Sport}}</td>
+          <td>{{Olympian.GoldMedals}}</td>
+          <td>{{Olympian.SilverMedals}}</td>
+          <td>{{Olympian.BronzeMedals}}</td>
+          <td>{{Olympian.TotalMedals}}</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

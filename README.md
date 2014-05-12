@@ -1,4 +1,19 @@
-angular-d3-csv-node-experiment
-==============================
+# CSV mapping with d3 and angular
 
-An experiment on using csv to power the data.  How much lag can be expected?
+This is truly an experiment on using csv files to power the data of an angular app.
+
+## Getting started
+
+Install the dependencies:
+
+```bash
+$ npm install 
+```
+
+Run the server and compile the client watching for changes:
+
+```bash
+$ npm start
+```
+
+Visit [http://127.0.0.1:3000](http://127.0.0.1:3000) or [localhost:3000](localhost:3000).
